@@ -16,6 +16,7 @@ public class FINRA {
                 result = i + " ";
             }
             System.out.print(result);
+            i++;
         }
 
 
