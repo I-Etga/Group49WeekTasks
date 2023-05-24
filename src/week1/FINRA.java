@@ -1,6 +1,12 @@
 package week1;
 
 public class FINRA {
+
+    public static void main(String[] args) {
+
+
+        finraMethod(30);
+    }
     public static void finraMethod(int number) {
 
         String result = "";
@@ -16,7 +22,7 @@ public class FINRA {
                 result = i + " ";
             }
             System.out.print(result);
-            i++;
+
         }
 
 
