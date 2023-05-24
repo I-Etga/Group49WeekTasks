@@ -1,11 +1,11 @@
 package week1;
 
 public class FINRA {
-    public static void main(String[] args) {
+    public static void finraMethod(int number) {
 
         String result = "";
 
-        for (int i = 1; i <= 30; i++) {
+        for (int i = 1; i <= number; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 result = "FINRA ";
             } else if (i % 5 == 0) {
