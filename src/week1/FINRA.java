@@ -1,7 +1,7 @@
 package week1;
 
 public class FINRA {
-    public static void main(String[] args) {
+    public static void finra() {
 
         String result = "";
         for (int i = 1; i <= 30; i++) {
@@ -16,6 +16,10 @@ public class FINRA {
             }
         }
         System.out.print(result);
+    }
+
+    public static void main(String[] args) {
+        finra();
     }
 
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Odd_Even {
 
-    public static void main(String[] args) {
+    public static void odd_even() {
 
         Scanner scan = new Scanner(System.in);
 
@@ -22,6 +22,10 @@ public class Odd_Even {
         scan.close();
 
 
+    }
+
+    public static void main(String[] args) {
+        odd_even();
     }
 
 
