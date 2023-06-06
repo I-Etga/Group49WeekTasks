@@ -1,8 +1,45 @@
 package week2;
 
+import java.util.Scanner;
+
 public class DivisibleBy3_5_15 {
 
+    public static void divisible(int N){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of N: ");
+        N = scanner.nextInt();
+
+        System.out.println("Divisible By 15:");
+        for (int i = 1; i <= N; i++) {
+            if (i % 15 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+        System.out.println("\nDivisible By 5:");
+        for (int i = 1; i <= N; i++) {
+            if (i % 5 == 0 ) {
+                System.out.print(i + " ");
+            }
+        }
+
+        System.out.println("\nDivisible By 3:");
+        for (int i = 1; i <= N; i++) {
+            if (i % 3 == 0 ) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        divisible(255);
+    }
 }
+
+
+
+
+
 /*
 2-Numbers – Divisible by 3, 5, 15
 Write a program that can print the numbers between 1 ~ N that can be divisible by 3, 5, and 15.
