@@ -1,31 +1,25 @@
 package week2;
 
-
-public class SwapNumbers{
-
-    public  static void  SwapNumbers(int a, int b) {
-
-        System.out.println("Before swapping: a = " + a + ", b = " + b);
-
-        // Swap the numbers using addition and subtraction
-        a = a + b;
-        b = a - b;
-        a = a - b;
-
-        System.out.println("After swapping: a = " + a + ", b = " + b);
-
-       }
-
+public class SwapNumbers {
     public static void main(String[] args) {
-        SwapNumbers(5,7);
+        int a = 40;
+        int b = 60;
+
+        //before swapping
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // Swapping the values without a third variable
+        a = a + b; // a = 40 + 60 = 100
+        b = a - b; // b = 100 - 60 = 40 (b is assigned to first value of a)
+        a = a - b; // a = 100 -40 = 60 (a is assigned to first value of b)
+
+        //after swapping
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
-    }
-
-
-
-//public static void  divisionWithoutOperator(int m, int n){
+}
 /*
 1-Numbers – Swap Numbers
 Swap two variables' values without using a third variable.
  */
-
