@@ -2,7 +2,6 @@ package week2;
 
 public class SwapNumbers {
 
-<<<<<<< HEAD
     public static void main(String[] args) {
 
         int x = 10;
@@ -20,10 +19,5 @@ public class SwapNumbers {
 }
 /*
   Numbers – Swap Numbers
-=======
-}
-/*
-1-Numbers – Swap Numbers
->>>>>>> master
 Swap two variables' values without using a third variable.
  */
