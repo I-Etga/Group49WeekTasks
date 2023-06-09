@@ -1,7 +1,30 @@
 package week2;
 
-public class DivisibleBy3_5_15 {
+import java.util.ArrayList;
+import java.util.List;
 
+public class DivisibleBy3_5_15 {
+public static void divisible3_5_15(int n){
+    List<Integer> divisible15= new ArrayList<>();
+    List<Integer> divisible5= new ArrayList<>();
+    List<Integer> divisible3= new ArrayList<>();
+    for (int i = 0; i < n; i++) {
+        if(i%15==0){
+            divisible15.add(i);
+        } else if (i%5==0) {
+           divisible5.add(i);
+        } else if (i%3==0) {
+           divisible3.add(i);
+        }
+    }
+    System.out.println("divisible15 = " + divisible15);
+    System.out.println("divisible5 = " + divisible5);
+    System.out.println("divisible3 = " + divisible3);
+}
+
+    public static void main(String[] args) {
+        divisible3_5_15(100);
+    }
 }
 /*
 2-Numbers – Divisible by 3, 5, 15
