@@ -1,7 +1,28 @@
 package week3;
 
-public class ReverseNegativeNumber {
+import java.util.Arrays;
 
+public class ReverseNegativeNumber {
+    public static void reverse(int num) {
+
+        num = -num;
+        String str = Integer.toString(num);
+        String[] arr = str.split("");
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = arr.length - 1; i >= 0; i--) {
+            sb.append(arr[i]);
+        }
+        String reversedStr = sb.toString();
+
+        int reverse = Integer.parseInt(reversedStr);
+        reverse = -reverse;
+        System.out.println(reverse);
+    }
+
+    public static void main(String[] args) {
+        reverse(-13);
+    }
 }
 /*
 2-Numbers -- Reverse negative number

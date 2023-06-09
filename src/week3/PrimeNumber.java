@@ -8,11 +8,11 @@ public class PrimeNumber {
                 continue;
             }
             if (num % i == 0 || num == 2) {
-                System.out.println(num + " Not Prime Number");
+                System.out.println(num + " Prime Number "+ prime);
 
                 return false;
             } else {
-                System.out.println(num + " Prime Number");
+                System.out.println(num + " Prime Number "+prime);
                 return prime;
             }
 
