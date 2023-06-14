@@ -1,6 +1,13 @@
 package week2;
 
 public class ConsecutiveNumbers {
+
+    public static void ConsecutiveNumbers(){
+
+    }
+    public static void main(String[] args) {
+
+    }
 }
 /*
 3-Numbers – Print Consecutive Numbers

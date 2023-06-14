@@ -1,6 +1,32 @@
 package week2;
 
+import java.util.Scanner;
+
 public class DivisibleBy3_5_15 {
+    public static void divide3_5_15(int N){
+
+        String dividedBy15 = "";
+        String dividedBy5 = "";
+        String dividedBy3 = "";
+
+        for (int i = 1; i <= N; i++) {
+            if (i % 15 == 0) {
+                dividedBy15 += " " + i;
+            } else if (i % 3 == 0) {
+                dividedBy3 += " " + i;
+            } else if (i % 5 == 0) {
+                dividedBy5 += " " + i;
+            }
+
+        }
+        System.out.println("divided by 15: " + dividedBy15);
+        System.out.println("divided by 5: " + dividedBy5);
+        System.out.println("divided by 3: " + dividedBy3);
+    }
+
+    public static void main(String[] args) {
+        divide3_5_15(100);
+    }
 
 }
 /*
