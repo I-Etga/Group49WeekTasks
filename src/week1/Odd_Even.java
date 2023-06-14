@@ -1,10 +1,7 @@
 package week1;
 
-<<<<<<< HEAD
-=======
 import javax.swing.plaf.PanelUI;
 import java.util.Scanner;
->>>>>>> 836fc3a606063d726c54632b3c7cf28300d760cc
 
 public class Odd_Even {
 
@@ -29,19 +26,6 @@ public class Odd_Even {
 
     public static void main(String[] args) {
         odd_even();
-    }
-
-
-    public static void main(String[] args) {
-        System.out.println(oddOrEven(-4));
-    }
-
-    public static String oddOrEven(int number) {
-
-        if (number % 2 == 0) {
-            return number + " is even";
-        }
-        return number + " is odd";
     }
 
 
