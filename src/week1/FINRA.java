@@ -1,6 +1,7 @@
 package week1;
 
 public class FINRA {
+<<<<<<< HEAD
     /*Numbers -- FINRA
     Write a method that prints out the numbers from 1 to 30 but;
     - for numbers which are multiple of 3 print "FIN" instead of the number,
@@ -23,5 +24,28 @@ public class FINRA {
 
 
     }
+=======
+    public static void finra() {
+
+        String result = "";
+        for (int i = 1; i <= 30; i++) {
+            if (i % 15 == 0) {
+                result += "FINRA ";
+            } else if (i % 3 == 0) {
+                result += "FIN ";
+            } else if (i % 5 == 0) {
+                result += "RA ";
+            } else {
+                result += i + " ";
+            }
+        }
+        System.out.print(result);
+    }
+
+    public static void main(String[] args) {
+        finra();
+    }
+
+>>>>>>> 836fc3a606063d726c54632b3c7cf28300d760cc
 }
 
