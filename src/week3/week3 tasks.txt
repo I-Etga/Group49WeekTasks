@@ -1,0 +1,8 @@
+Java Coding Tasks - Week 3
+
+1-Numbers -- Prime Number
+Write a method that can check if a number is prime or not.
+
+2-Numbers -- Reverse negative number
+Write a return method that can reverse digits of a negative number and return it as int
+input: -35  output: -53
