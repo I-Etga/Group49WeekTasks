@@ -1,32 +1,29 @@
 package week3;
 
 public class PrimeNumber {
-    public static void primeOrNot(int number) {
+    public static void isPrime(int number) throws IllegalArgumentException {
+
         if (number <= 1) {
-            System.out.println(number + " is not prime.");
-            return;
+            throw new IllegalArgumentException("Number must be greater than 1.");
         }
 
-        // Check for divisibility from 2 to the square root of the number
-        for (int i = 2; i < number; i++) {
+        for (int i = 2; i * i <= number; i++) {
             if (number % i == 0) {
-                System.out.println(number + " is not prime.");
-                return; // Number is divisible, so not prime
+                throw new IllegalArgumentException(number + " is not a prime number.");
             }
         }
+        System.out.println(number + " is a prime number.");
 
-        System.out.println(number + " is prime.");
     }
-
-    public static void main(String[] args) {
-        int number = 37;
-        primeOrNot(number);//37 is prime.
-
-        number = 8;
-        primeOrNot(number);//8 is not prime.
+        public static void main(String[] args) {
+            int number = 7;
+            try {
+                isPrime(number);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
-
-}
 /*
 1-Numbers -- Prime Number
 Write a method that can check if a number is prime or not.

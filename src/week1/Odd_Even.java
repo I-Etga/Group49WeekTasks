@@ -1,22 +1,42 @@
 package week1;
 
-public class Odd_Even {
-    public static void identify(int number) {
+import javax.swing.plaf.PanelUI;
+import java.util.Scanner;
 
-        if (number % 2 == 0) {
-            System.out.println("Even");
-        } else {
-            System.out.println("Odd");
+public class Odd_Even {
+
+    public static void odd_even() {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Please enter a number: " );//we will see on console
+
+        int number = scan.nextInt();
+
+        if( number>0 &&  number%2 ==0){
+            System.out.println("The given number is even: "+number);
+        }else{
+            System.out.println("The given number is odd: "+number);
         }
+
+        scan.close();
+
+
     }
 
     public static void main(String[] args) {
-        identify(41);
+        odd_even();
     }
+
+
 }
 
+
+
+
 /* Numbers -- odd & even
-Write a method that can identify  a given number is even or odd.
-EX:
-       identify(5) --> "Odd"
-       identify(6) --> "Even"*/
+        Write a method that can identify  a given number is even or odd.
+        EX:
+        identify(5) --> "Odd"
+        identify(6) --> "Even"
+        */
