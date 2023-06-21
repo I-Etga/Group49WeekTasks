@@ -12,10 +12,7 @@ public class Reverse {
 
         return reversed.toString();
     }
-
-
-
-
+    
     public static void main(String[] args) {
 
         String input = "ABCD";
