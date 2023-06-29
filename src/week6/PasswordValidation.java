@@ -2,6 +2,41 @@ package week6;
 
 public class PasswordValidation {
 
+    public static boolean isValidPassword(String password) {
+        if (password.length() < 6 || password.contains(" ")) {
+            return false;
+        }
+
+        boolean hasUppercase = false;
+        boolean hasLowercase = false;
+        boolean hasSpecialChar = false;
+        boolean hasDigit = false;
+
+        for (char c : password.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                hasUppercase = true;
+            } else if (Character.isLowerCase(c)) {
+                hasLowercase = true;
+            } else if (Character.isDigit(c)) {
+                hasDigit = true;
+            } else {
+                hasSpecialChar = true;
+            }
+        }
+
+        return hasUppercase && hasLowercase && hasSpecialChar && hasDigit;
+    }
+
+    public static void main(String[] args) {
+        String password = "Abc123!";
+        boolean isValid = isValidPassword(password);
+        System.out.println("Is password valid? " + isValid);
+    }
+
+
+
+
+
 }
 /*
 String_PasswordValidation
