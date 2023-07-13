@@ -2,31 +2,24 @@ package week6;
 
 public class SumOfAllDigits {
 
+    public static int sumOfAllDigits(String sentence) {
+        int total = 0;
+        String[] chars = sentence.split(" ");
 
-    public static int calculateDigitSum(String input) {
-        int sum = 0;
-        int currentNumber = 0;
-
-        for (char c : input.toCharArray()) {
-            if (Character.isDigit(c)) {
-                currentNumber = currentNumber * 10 + (c - '0');
-            } else {
-                sum += currentNumber;
-                currentNumber = 0;
+        for (String each : chars) {
+            if (Character.isDigit(each.charAt(0))) {
+                total += Integer.parseInt(each);
             }
         }
 
-        sum += currentNumber;
-
-        return sum;
+        return total;
     }
 
     public static void main(String[] args) {
-        String input = "12 java 5 apple 3";
-        int sum = calculateDigitSum(input);
-        System.out.println("Sum of digits: " + sum);
-    }
+        String sentence = "12 java 5 apple 3";
 
+        System.out.println(sumOfAllDigits(sentence));
+    }
 
 }
 /*
